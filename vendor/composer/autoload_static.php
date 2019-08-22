@@ -5185,6 +5185,8 @@ class ComposerStaticInit5a530f5557f9db0e9ac155c2303a4f88
         'TCB\\Laravel\\Nova\\Fields\\Wysiwyg' => __DIR__ . '/../..' . '/src/Nova/Fields/Wysiwyg.php',
         'TCB\\Laravel\\Nova\\Filters\\WhereOptions' => __DIR__ . '/../..' . '/src/Nova/Filters/WhereOptions.php',
         'TCB\\Laravel\\Nova\\Resource' => __DIR__ . '/../..' . '/src/Nova/Resource.php',
+        'TCB\\Laravel\\Nova\\Resources\\Traits\\RestrictUpdates' => __DIR__ . '/../..' . '/src/Nova/Traits/RestrictUpdates.php',
+        'TCB\\Laravel\\Nova\\Resources\\Traits\\RestrictViewing' => __DIR__ . '/../..' . '/src/Nova/Traits/RestrictViewing.php',
         'TCB\\Laravel\\Nova\\User' => __DIR__ . '/../..' . '/src/Nova/User.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',

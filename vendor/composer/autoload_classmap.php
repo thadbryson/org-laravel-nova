@@ -4596,6 +4596,8 @@ return array(
     'TCB\\Laravel\\Nova\\Fields\\Wysiwyg' => $baseDir . '/src/Nova/Fields/Wysiwyg.php',
     'TCB\\Laravel\\Nova\\Filters\\WhereOptions' => $baseDir . '/src/Nova/Filters/WhereOptions.php',
     'TCB\\Laravel\\Nova\\Resource' => $baseDir . '/src/Nova/Resource.php',
+    'TCB\\Laravel\\Nova\\Resources\\Traits\\RestrictUpdates' => $baseDir . '/src/Nova/Traits/RestrictUpdates.php',
+    'TCB\\Laravel\\Nova\\Resources\\Traits\\RestrictViewing' => $baseDir . '/src/Nova/Traits/RestrictViewing.php',
     'TCB\\Laravel\\Nova\\User' => $baseDir . '/src/Nova/User.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
     'TheSeer\\Tokenizer\\Exception' => $vendorDir . '/theseer/tokenizer/src/Exception.php',
