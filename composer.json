@@ -1,0 +1,71 @@
+{
+    "name": "thadbryson/nova-tcb",
+    "type": "project",
+    "license": "proprietary",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:thadbry/data.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:thadbry/toolkit.git"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "ext-bcmath": "*",
+        "ext-ctype": "*",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-mysqli": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "ext-tokenizer": "*",
+        "ext-xml": "*",
+        "chris-ware/nova-breadcrumbs": "1.*",
+        "davidpiesse/nova-phpinfo": "0.*",
+        "digitalcloud/nova-custom-views": "1.*",
+        "gregoriohc/laravel-nova-theme-responsive": "0.6.*",
+        "kabbouchi/nova-logs-tool": "0.1.*",
+        "laraning/nova-time-field": "0.1.*",
+        "laravel/framework": "5.8.*",
+        "laravel/horizon": "3.2.*",
+        "laravel/nova": "2.0.*",
+        "laravel/tinker": "1.0.*",
+        "roave/security-advisories": "dev-master",
+        "robertboes/nova-slider-field": "0.*",
+        "sbine/route-viewer": "0.0.*",
+        "spatie/nova-backup-tool": "3.0.*",
+        "thadbryson/data": "master",
+        "thadbryson/toolkit": "master",
+        "timothyasp/nova-color-field": "1.0.*",
+        "wewowweb/laravel-svelte-preset": "^0.1.1"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TCB\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,65 @@
+#!/bin/bash
+
+if [ $# -eq 1 ] || [ $# -eq 2 ]; then
+    if [ $1 == "redo" ]; then
+        docker-compose stop
+        docker-compose rm -f
+        docker-compose build --no-cache
+        docker-compose --verbose up -d
+        exit 0
+    elif [ $1 == "start" ]; then
+        docker-compose --verbose up -d
+        exit 0
+    elif [ $1 == "restart" ]; then
+        docker-compose restart
+        exit 0
+    elif [ $1 == "stop" ]; then
+        docker-compose stop
+        exit 0
+    elif [ $1 == "ssh" ]; then
+        docker exec -u 1000 -i -t $2 bash
+        exit 0
+    elif [ $1 == "ssh-root" ]; then
+        docker exec -ti $2 bash
+        exit 0
+    elif [ $1 == "stats" ]; then
+        docker stats $(docker ps|grep -v "NAMES"|awk '{ print $NF }'|tr "\n" " ")
+        exit 0
+    elif [ $1 == "logs" ]; then
+        if [ -z "$2" ]; then
+            docker-compose logs
+        else
+            docker-compose logs | grep "${2}"
+        fi
+        exit 0
+    elif [ $1 == "remove" ]; then
+        read -r -p "This will delete your existing docker containers for this project.  Are you sure? [N/y]" response
+        if [[ $response =~ ^(yes|y) ]]; then
+            docker-compose stop
+            docker-compose rm -f
+        fi
+        exit 0
+    elif [ $1 == "build" ]; then
+        docker-compose build --no-cache
+        exit 0
+    fi
+fi
+
+
+echo "================================================================================"
+echo "Usage: ctl COMMAND"
+echo
+echo "COMMAND may be:"
+echo "  redo                        stop, remove, build, and start all containers"
+echo "  start                       starts all containers"
+echo "  stop                        stops all running containers"
+echo "  restart                     restarts all running containers"
+echo "  stats                       show stats for all running containers"
+echo "  remove                      delete project containers"
+echo "  build                       (re)builds all containers"
+echo "  push                        push built images to private registry"
+echo "  logs [CONTAINER_NAME]       shows logs for all running containers or optionally specified container"
+echo "  ssh <CONTAINER_NAME>        ssh into the specified container"
+echo "  ssh-root <CONTAINER_NAME>   ssh AS ROOT into the specified container"
+echo "================================================================================"
+exit 1

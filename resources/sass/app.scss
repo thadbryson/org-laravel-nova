@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import 'variables';
+@import "~tailwindcss/tailwind.css";
+
+body {
+    background-color: $background-color;
+    color:            $text-color;
+
+    font-family:      $font-family-sans-serif;
+    font-size:        $font-size-base;
+    line-height:      $line-height-base;
+
+    a {
+        color:           $link-color;
+        text-decoration: $link-decoration;
+
+        a:hover {
+            text-decoration: $link-hover-decoration;
+        }
+    }
+}
