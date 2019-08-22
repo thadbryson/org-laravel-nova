@@ -1,6 +1,6 @@
 {
     "name": "thadbryson/nova-tcb",
-    "type":  "library",
+    "type": "library",
     "description": "Laravel Nova plugin for myself.",
     "license": "proprietary",
     "repositories": [
@@ -29,6 +29,7 @@
         "ext-pdo": "*",
         "ext-tokenizer": "*",
         "ext-xml": "*",
+        "doctrine/dbal": "2.9.*",
         "chris-ware/nova-breadcrumbs": "1.*",
         "davidpiesse/nova-phpinfo": "0.*",
         "digitalcloud/nova-custom-views": "1.*",
@@ -49,7 +50,16 @@
         "wewowweb/laravel-svelte-preset": "^0.1.1"
     },
     "require-dev": {
-        "codeception/codeception": "2.4.*"
+        "barryvdh/laravel-debugbar": "^3.2",
+        "barryvdh/laravel-ide-helper": "^2.5",
+        "beyondcode/laravel-dump-server": "^1.0",
+        "codeception/codeception": "2.4.*",
+        "deployer/deployer": "^6.4",
+        "filp/whoops": "^2.0",
+        "fzaninotto/faker": "^1.4",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^2.0",
+        "nunomaduro/phpinsights": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -61,7 +71,6 @@
             "Tests\\": "tests/"
         }
     },
-
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,

@@ -2,7 +2,7 @@
  * Widgets
  */
 
-import App from './App.svelte';
+import App from './AppExample.svelte';
 
 export default new App({
     target: document.body,

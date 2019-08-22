@@ -47,7 +47,7 @@ abstract class User extends \TCB\Laravel\Nova\Resource
                 Name::make(),
 
                 Select::make('Theme')
-                    ->options(Themes::SELECT),
+                    ->options(Themes::ALL),
 
                 EmailLink::make(),
                 Text::make('Email')
