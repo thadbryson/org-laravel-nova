@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Models\Api;
+namespace TCB\Laravel\Models\Api;
 
 /**
  * Class Oauth2

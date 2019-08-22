@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace TCB\Nova\Actions;
+namespace TCB\Laravel\Nova\Actions;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\InteractsWithQueue;

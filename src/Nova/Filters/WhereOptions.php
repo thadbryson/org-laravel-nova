@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace TCB\Nova\Filters;
+namespace TCB\Laravel\Nova\Filters;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

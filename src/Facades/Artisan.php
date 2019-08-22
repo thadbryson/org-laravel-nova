@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Facades;
+namespace TCB\Laravel\Facades;
 
 use Illuminate\Console\Application;
 
@@ -11,7 +11,7 @@ use Illuminate\Console\Application;
  *
  * @method static Application command(string $command, callable $callable)
  */
-final class Artisan extends \Illuminate\Support\Facades\Artisan
+class Artisan extends \Illuminate\Support\Facades\Artisan
 {
 
 }

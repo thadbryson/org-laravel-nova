@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Nova\Fields;
+namespace TCB\Laravel\Nova\Fields;
 
 /**
  * Class Description
@@ -11,7 +11,7 @@ namespace App\Nova\Fields;
  */
 class Description extends \Laravel\Nova\Fields\Text
 {
-    use \App\Nova\Fields\Traits\Description {
+    use Traits\Description {
         __construct as protected __constructTrait;
     }
 

@@ -1,0 +1,11 @@
+/node_modules
+/resources
+/.idea
+package-lock.json
+yarn.*
+composer.phar
+composer.lock
+phpunit.xml
+.phpunit.result.cache
+.DS_Store
+Thumbs.db

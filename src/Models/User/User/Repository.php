@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace App\Models\User\User;
+namespace TCB\Laravel\Models\User\User;
 
-use App\Models\User\User;
+use TCB\Laravel\Models\User\User;
 
 class Repository extends \Data\Services\Repository
 {

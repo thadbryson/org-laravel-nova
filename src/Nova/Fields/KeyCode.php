@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace App\Nova\Fields;
+namespace TCB\Laravel\Nova\Fields;
 
-use App\Nova\Fields\Traits\ShowOnIndex;
+use TCB\Laravel\Nova\Fields\Traits\ShowOnIndex;
 
 class KeyCode extends \Laravel\Nova\Fields\Text
 {

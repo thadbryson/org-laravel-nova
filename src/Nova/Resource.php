@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace TCB\Nova;
+namespace TCB\Laravel\Nova;
 
 use Carbon\CarbonInterval;
 use ChrisWare\NovaBreadcrumbs\Traits\Breadcrumbs;

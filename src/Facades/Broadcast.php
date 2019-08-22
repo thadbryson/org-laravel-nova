@@ -2,14 +2,14 @@
 
 declare(strict_types = 1);
 
-namespace App\Facades;
+namespace TCB\Laravel\Facades;
 
 /**
  * Class Broadcast
  *
  * @method static void routes()
  */
-final class Broadcast extends \Illuminate\Support\Facades\Broadcast
+class Broadcast extends \Illuminate\Support\Facades\Broadcast
 {
 
 }

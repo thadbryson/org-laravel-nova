@@ -1,6 +1,7 @@
 {
     "name": "thadbryson/nova-tcb",
-    "type": "project",
+    "type":  "library",
+    "description": "Laravel Nova plugin for myself.",
     "license": "proprietary",
     "repositories": [
         {
@@ -52,7 +53,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TCB\\": "src/"
+            "TCB\\Laravel\\": "src/"
         }
     },
     "autoload-dev": {

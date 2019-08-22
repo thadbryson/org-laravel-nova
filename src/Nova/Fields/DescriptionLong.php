@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Nova\Fields;
+namespace TCB\Laravel\Nova\Fields;
 
 /**
  * Class DescriptionLong
@@ -11,7 +11,7 @@ namespace App\Nova\Fields;
  */
 class DescriptionLong extends \Laravel\Nova\Fields\Textarea
 {
-    use \App\Nova\Fields\Traits\Description;
+    use Traits\Description;
 
     /**
      * Maximum length allowed.

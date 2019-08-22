@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Models\User;
+namespace TCB\Laravel\Models\User;
 
 use Carbon\Carbon;
 use Data\BaseModel;

@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Nova\Fields\DateTime;
+namespace TCB\Laravel\Nova\Fields\DateTime;
 
 use Exception;
 use Laravel\Nova\Http\Requests\NovaRequest;

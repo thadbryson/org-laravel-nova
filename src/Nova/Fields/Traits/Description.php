@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Nova\Fields\Traits;
+namespace TCB\Laravel\Nova\Fields\Traits;
 
 use Tool\Str;
 use Tool\StrStatic;

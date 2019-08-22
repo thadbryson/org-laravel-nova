@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace App\Nova\Fields\Boolean;
+namespace TCB\Laravel\Nova\Fields\Boolean;
 
-use App\Nova\Fields\Icon;
+use TCB\Laravel\Nova\Fields\Icon;
 use Tool\Cast;
 use Tool\Str;
 

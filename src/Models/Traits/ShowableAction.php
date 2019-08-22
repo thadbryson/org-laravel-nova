@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Models\Traits;
+namespace TCB\Laravel\Models\Traits;
 
 /**
  * Trait ShowableAction

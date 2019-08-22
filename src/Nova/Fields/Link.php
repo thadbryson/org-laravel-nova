@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Nova\Fields;
+namespace TCB\Laravel\Nova\Fields;
 
 class Link extends \Laravel\Nova\Fields\Text
 {

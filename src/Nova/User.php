@@ -2,12 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace TCB\Nova;
+namespace TCB\Laravel\Nova;
 
-use TCB\Nova\Fields\EmailLink;
-use TCB\Nova\Fields\ID;
-use TCB\Nova\Fields\Name;
-use TCB\Nova\Resources\Traits\RestrictViewing;
+use TCB\Laravel\Nova\Fields\EmailLink;
+use TCB\Laravel\Nova\Fields\ID;
+use TCB\Laravel\Nova\Fields\Name;
+use TCB\Laravel\Nova\Resources\Traits\RestrictViewing;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\PasswordConfirmation;

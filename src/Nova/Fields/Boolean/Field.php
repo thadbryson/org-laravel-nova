@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace App\Nova\Fields\Boolean;
+namespace TCB\Laravel\Nova\Fields\Boolean;
 
 use Tool\Str;
 
