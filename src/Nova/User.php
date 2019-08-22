@@ -28,7 +28,7 @@ abstract class User extends \TCB\Laravel\Nova\Resource
         'name', 'email',
     ];
 
-    abstract protected function detailFields(): array;
+    abstract protected function userFields(): array;
 
     /**
      * Get the fields displayed by the resource.
@@ -41,7 +41,7 @@ abstract class User extends \TCB\Laravel\Nova\Resource
         return [
             ID::make(),
 
-            new Panel('Details', $this->detailFields()),
+            new Panel('Details', $this->userFields()),
 
             new Panel('User Info', [
                 Name::make(),
