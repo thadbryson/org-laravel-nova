@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de36821532be46086006088dc0c9d4c3",
+    "content-hash": "066b756307dd62cd0af1379ababcf5c1",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -4763,7 +4763,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:thadbry/data.git",
-                "reference": "c61da5eb0c4e3e60d613e2ad4c4eddc9a2c867cf"
+                "reference": "2c679ec2a43c60ffc6ccb25162b9b2b5f6b3ac53"
             },
             "require": {
                 "highsolutions/eloquent-sequence": "3.1.*",
@@ -4798,7 +4798,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2019-08-15T00:24:06+00:00"
+            "time": "2019-08-24T18:26:03+00:00"
         },
         {
             "name": "thadbryson/toolkit",
@@ -4806,7 +4806,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:thadbry/toolkit.git",
-                "reference": "200440482ce1a017c46729510716b352632f836b"
+                "reference": "284b3b234d540d42f5fa0b57d157203e4222175b"
             },
             "require": {
                 "beberlei/assert": "3.2.*",
@@ -4852,7 +4852,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2019-08-24T13:28:15+00:00"
+            "time": "2019-08-24T18:23:16+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
