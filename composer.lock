@@ -4763,18 +4763,18 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:thadbry/data.git",
-                "reference": "2c679ec2a43c60ffc6ccb25162b9b2b5f6b3ac53"
+                "reference": "e5b883b57acfc148dd71a8d27b9d126ca22a6962"
             },
             "require": {
                 "highsolutions/eloquent-sequence": "3.1.*",
                 "illuminate/database": "5.8.*",
                 "illuminate/events": "5.8.*",
                 "php": ">=7.3",
-                "thadbryson/toolkit": "*"
+                "roave/security-advisories": "dev-master",
+                "thadbryson/toolkit": "dev-master"
             },
             "require-dev": {
-                "codeception/codeception": "3.*",
-                "roave/security-advisories": "dev-master"
+                "codeception/codeception": "3.*"
             },
             "type": "library",
             "extra": {
@@ -4798,7 +4798,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2019-08-24T18:26:03+00:00"
+            "time": "2019-08-24T18:40:27+00:00"
         },
         {
             "name": "thadbryson/toolkit",
