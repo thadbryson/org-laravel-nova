@@ -6,8 +6,10 @@ import { CONFIG } from '../stores/config';
  */
 axios.interceptors.request.use(function (request) {
 
-    request.headers['token-api'] = CONFIG.token;
-    request.headers['user-id']   = CONFIG.user.id;
+    CONFIG.user = CONFIG.user || {};
+
+    request.headers['token-api'] = CONFIG.token || null;
+    request.headers['user-id']   = CONFIG.user.id || null;
 
     return request;
 });

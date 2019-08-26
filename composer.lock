@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c68b8b21dbac8017c5ce0fb10afd584",
+    "content-hash": "a35dea5e11589abb6a8c505cf6f56591",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -5010,6 +5010,55 @@
                 "templating"
             ],
             "time": "2019-06-18T15:37:11+00:00"
+        },
+        {
+            "name": "vkovic/laravel-custom-casts",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vkovic/laravel-custom-casts.git",
+                "reference": "bf260d4171cd498bb42c225cba71f82670213914"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vkovic/laravel-custom-casts/zipball/bf260d4171cd498bb42c225cba71f82670213914",
+                "reference": "bf260d4171cd498bb42c225cba71f82670213914",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "illuminate/database": "5.5.*|5.6.*|5.7.*|5.8.*",
+                "orchestra/database": "3.5.*|3.6.*|3.7.*|3.8.*",
+                "orchestra/testbench": "3.5.*|3.6.*|3.7.*|3.8.*",
+                "phpunit/phpunit": "^6.3|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vkovic\\LaravelCustomCasts\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Ković",
+                    "email": "vlada.kovic@gmail.com"
+                }
+            ],
+            "description": "Make your own custom cast type for Laravel model attributes",
+            "keywords": [
+                "cast",
+                "casts",
+                "datatype",
+                "laravel",
+                "model"
+            ],
+            "time": "2019-08-25T13:17:23+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -10099,6 +10148,69 @@
                 "validate"
             ],
             "time": "2019-08-24T08:43:50+00:00"
+        },
+        {
+            "name": "wnx/laravel-stats",
+            "version": "v1.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefanzweifel/laravel-stats.git",
+                "reference": "e7bb5b6a376e840167ec26d10754c4c1e0fdf12a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefanzweifel/laravel-stats/zipball/e7bb5b6a376e840167ec26d10754c4c1e0fdf12a",
+                "reference": "e7bb5b6a376e840167ec26d10754c4c1e0fdf12a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "php": ">=7.0.0",
+                "phploc/phploc": "~4.0|~5.0",
+                "symfony/finder": "~3.3|~4.0"
+            },
+            "require-dev": {
+                "laravel/browser-kit-testing": "~2.0|~3.0|~4.0|~5.0",
+                "laravel/dusk": "~2.0|~3.0|~4.0",
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "^3.5|^3.6|^3.7",
+                "phpunit/phpunit": "6.*|7.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Wnx\\LaravelStats\\StatsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wnx\\LaravelStats\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Zweifel",
+                    "role": "Developer",
+                    "email": "hello@stefanzweifel.io",
+                    "homepage": "https://stefanzweifel.io"
+                }
+            ],
+            "description": "Get insights about your Laravel Project",
+            "homepage": "https://github.com/stefanzweifel/laravel-stats",
+            "keywords": [
+                "laravel",
+                "statistics",
+                "stats",
+                "wnx"
+            ],
+            "time": "2019-03-20T19:38:00+00:00"
         }
     ],
     "aliases": [],

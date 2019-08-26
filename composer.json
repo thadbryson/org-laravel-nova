@@ -25,10 +25,10 @@
         "ext-pdo": "*",
         "ext-tokenizer": "*",
         "ext-xml": "*",
-        "doctrine/dbal": "2.9.*",
         "chris-ware/nova-breadcrumbs": "1.*",
         "davidpiesse/nova-phpinfo": "0.*",
         "digitalcloud/nova-custom-views": "1.*",
+        "doctrine/dbal": "2.9.*",
         "gregoriohc/laravel-nova-theme-responsive": "0.6.*",
         "kabbouchi/nova-logs-tool": "0.1.*",
         "laraning/nova-time-field": "0.1.*",
@@ -42,6 +42,7 @@
         "spatie/nova-backup-tool": "3.0.*",
         "thadbryson/data": "dev-master",
         "timothyasp/nova-color-field": "1.0.*",
+        "vkovic/laravel-custom-casts": "^1.1",
         "wewowweb/laravel-svelte-preset": "^0.1.1"
     },
     "require-dev": {
@@ -49,12 +50,13 @@
         "barryvdh/laravel-ide-helper": "^2.5",
         "beyondcode/laravel-dump-server": "^1.0",
         "codeception/codeception": "2.4.*",
-        "deployer/deployer":  "6.5.*",
+        "deployer/deployer": "6.5.*",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^2.0",
-        "nunomaduro/phpinsights": "^1.0"
+        "nunomaduro/phpinsights": "^1.0",
+        "wnx/laravel-stats": "^1.9"
     },
     "autoload": {
         "psr-4": {
