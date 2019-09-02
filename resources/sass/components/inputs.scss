@@ -22,3 +22,11 @@ input[type="range"] {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
     }
 }
+
+input[type="text"], input[type="number"] {
+    @apply shadow appearance-none border rounded p-2;
+
+    &:focus {
+        outline: none;
+    }
+}
