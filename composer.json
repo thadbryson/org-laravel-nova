@@ -1,8 +1,16 @@
 {
     "name": "thadbryson/nova-tcb",
     "type": "library",
-    "description": "Laravel Nova plugin for myself.",
+    "description": "Laravel Nova setup for myself.",
     "license": "proprietary",
+    "authors": [
+        {
+            "name": "Thad Bryson",
+            "email": "thadbry@gmail.com",
+            "homepage": "http://thadbryson.co",
+            "role": "Creator"
+        }
+    ],
     "repositories": [
         {
             "type": "composer",
@@ -25,25 +33,25 @@
         "ext-pdo": "*",
         "ext-tokenizer": "*",
         "ext-xml": "*",
-        "chris-ware/nova-breadcrumbs": "1.*",
-        "davidpiesse/nova-phpinfo": "0.*",
+        "chris-ware/nova-breadcrumbs": "1.2.*",
+        "davidpiesse/nova-phpinfo": "0.0.*",
         "digitalcloud/nova-custom-views": "1.*",
         "doctrine/dbal": "2.9.*",
         "gregoriohc/laravel-nova-theme-responsive": "0.6.*",
         "kabbouchi/nova-logs-tool": "0.1.*",
         "laraning/nova-time-field": "0.1.*",
         "laravel/framework": "6.0.*",
-        "laravel/horizon": "3.2.*",
+        "laravel/horizon": "3.3.*",
         "laravel/nova": "2.0.*",
         "laravel/tinker": "1.0.*",
         "roave/security-advisories": "dev-master",
         "robertboes/nova-slider-field": "0.*",
         "sbine/route-viewer": "0.0.*",
-        "spatie/nova-backup-tool": "3.0.*",
+        "spatie/nova-backup-tool": "3.1.*",
         "thadbryson/data": "dev-master",
         "timothyasp/nova-color-field": "1.0.*",
-        "vkovic/laravel-custom-casts": "^1.1",
-        "wewowweb/laravel-svelte-preset": "^0.1.1"
+        "vkovic/laravel-custom-casts": "1.1.*",
+        "wewowweb/laravel-svelte-preset": "0.1.*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
