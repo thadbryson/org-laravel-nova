@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e14fbfc598383405684ec67680d18ae6",
+    "content-hash": "3e2dbf06cf11f080324577fa4d896c13",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -4761,19 +4761,18 @@
         },
         {
             "name": "thadbryson/data",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "../data",
-                "reference": "28bb8b3414915c98020f3701daebaa050ea1499e",
-                "shasum": null
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:thadbry/data.git",
+                "reference": "28bb8b3414915c98020f3701daebaa050ea1499e"
             },
             "require": {
                 "highsolutions/eloquent-sequence": "3.4.*",
                 "illuminate/events": "6.0.*",
                 "php": ">=7.3",
                 "roave/security-advisories": "dev-master",
-                "thadbryson/toolkit": "*"
+                "thadbryson/toolkit": "dev-master"
             },
             "require-dev": {
                 "codeception/codeception": "3.*"
@@ -4799,7 +4798,8 @@
             },
             "license": [
                 "proprietary"
-            ]
+            ],
+            "time": "2019-09-05T14:02:34+00:00"
         },
         {
             "name": "thadbryson/toolkit",

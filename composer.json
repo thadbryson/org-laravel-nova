@@ -17,12 +17,8 @@
             "url": "https://nova.laravel.com"
         },
         {
-            "type": "path",
-            "url": "../data"
-        },
-        {
-            "type": "path",
-            "url": "../toolkit"
+            "type": "vcs",
+            "url": "git@bitbucket.org:thadbry/data.git"
         }
     ],
     "require": {
