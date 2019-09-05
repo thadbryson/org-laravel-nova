@@ -125,22 +125,6 @@
         },
         {
             "name": "chris-ware/nova-breadcrumbs",
-<<<<<<< HEAD
-            "version": "1.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chris-ware/nova-breadcrumbs.git",
-                "reference": "c22aa536c9456515e0aa50e0fc183b7d28487169"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chris-ware/nova-breadcrumbs/zipball/c22aa536c9456515e0aa50e0fc183b7d28487169",
-                "reference": "c22aa536c9456515e0aa50e0fc183b7d28487169",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/nova": ">=2.0.0 <=2.1.1",
-=======
             "version": "1.2.4",
             "source": {
                 "type": "git",
@@ -155,7 +139,6 @@
             },
             "require": {
                 "laravel/nova": ">=2.0.0 <=2.2.0",
->>>>>>> feature/laravel-v6
                 "php": ">=7.1.0"
             },
             "type": "library",
@@ -180,11 +163,7 @@
                 "laravel",
                 "nova"
             ],
-<<<<<<< HEAD
-            "time": "2019-08-25T12:52:29+00:00"
-=======
             "time": "2019-09-04T17:31:35+00:00"
->>>>>>> feature/laravel-v6
         },
         {
             "name": "danielstjules/stringy",
@@ -1243,8 +1222,6 @@
             "time": "2019-07-01T23:21:34+00:00"
         },
         {
-<<<<<<< HEAD
-=======
             "name": "highsolutions/eloquent-sequence",
             "version": "3.4.0",
             "source": {
@@ -1307,7 +1284,6 @@
             "time": "2019-09-04T06:51:56+00:00"
         },
         {
->>>>>>> feature/laravel-v6
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -1550,18 +1526,6 @@
         },
         {
             "name": "laravel/framework",
-<<<<<<< HEAD
-            "version": "v5.8.34",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "c3a870b96c7afe5174f486af74768ccfddeec77b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c3a870b96c7afe5174f486af74768ccfddeec77b",
-                "reference": "c3a870b96c7afe5174f486af74768ccfddeec77b",
-=======
             "version": "v6.0.0",
             "source": {
                 "type": "git",
@@ -1572,7 +1536,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/89c81d4dc37714d82521d05dc003b26b2a86defc",
                 "reference": "89c81d4dc37714d82521d05dc003b26b2a86defc",
->>>>>>> feature/laravel-v6
                 "shasum": ""
             },
             "require": {
@@ -1704,11 +1667,7 @@
                 "framework",
                 "laravel"
             ],
-<<<<<<< HEAD
-            "time": "2019-08-27T14:35:59+00:00"
-=======
             "time": "2019-09-03T13:09:57+00:00"
->>>>>>> feature/laravel-v6
         },
         {
             "name": "laravel/horizon",
@@ -4806,18 +4765,11 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:thadbry/data.git",
-<<<<<<< HEAD
-                "reference": "e7c4e1740a5121597fc7a06f692c641701c51016"
-            },
-            "require": {
-                "illuminate/events": "5.8.*",
-=======
                 "reference": "28bb8b3414915c98020f3701daebaa050ea1499e"
             },
             "require": {
                 "highsolutions/eloquent-sequence": "3.4.*",
                 "illuminate/events": "6.0.*",
->>>>>>> feature/laravel-v6
                 "php": ">=7.3",
                 "roave/security-advisories": "dev-master",
                 "thadbryson/toolkit": "dev-master"
@@ -4847,11 +4799,7 @@
             "license": [
                 "proprietary"
             ],
-<<<<<<< HEAD
-            "time": "2019-09-03T15:27:48+00:00"
-=======
             "time": "2019-09-05T14:02:34+00:00"
->>>>>>> feature/laravel-v6
         },
         {
             "name": "thadbryson/toolkit",
@@ -5169,83 +5117,11 @@
                 "environment"
             ],
             "time": "2019-08-27T17:00:38+00:00"
-<<<<<<< HEAD
-        },
-        {
-            "name": "wewowweb/laravel-svelte-preset",
-            "version": "v0.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wewowweb/laravel-svelte-preset.git",
-                "reference": "7638d90a31a6825650c0578eba19ab52355d3a4a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wewowweb/laravel-svelte-preset/zipball/7638d90a31a6825650c0578eba19ab52355d3a4a",
-                "reference": "7638d90a31a6825650c0578eba19ab52355d3a4a",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "5.8.*",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "nunomaduro/larastan": "^0.3.17",
-                "orchestra/testbench": "3.8.*",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Wewowweb\\LaravelSveltePreset\\LaravelSveltePresetServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wewowweb\\LaravelSveltePreset\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Gal Jakic",
-                    "role": "Author",
-                    "email": "gal@wewowweb.com"
-                }
-            ],
-            "description": "Svelte frontend preset for Laravel.",
-            "homepage": "https://github.com/wewowweb/laravel-svelte-preset",
-            "keywords": [
-                "We Wow Web",
-                "laravel",
-                "laravel-svelte-preset",
-                "svelte"
-            ],
-            "time": "2019-08-05T07:31:25+00:00"
-=======
->>>>>>> feature/laravel-v6
         }
     ],
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-<<<<<<< HEAD
-            "version": "v3.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "8794e7a3b7f3a0e7222bcd088f5f44b2b6ff8e61"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/8794e7a3b7f3a0e7222bcd088f5f44b2b6ff8e61",
-                "reference": "8794e7a3b7f3a0e7222bcd088f5f44b2b6ff8e61",
-=======
             "version": "v3.2.8",
             "source": {
                 "type": "git",
@@ -5256,7 +5132,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/18208d64897ab732f6c04a19b319fe8f1d57a9c0",
                 "reference": "18208d64897ab732f6c04a19b319fe8f1d57a9c0",
->>>>>>> feature/laravel-v6
                 "shasum": ""
             },
             "require": {
@@ -5311,11 +5186,7 @@
                 "profiler",
                 "webprofiler"
             ],
-<<<<<<< HEAD
-            "time": "2019-08-22T14:29:54+00:00"
-=======
             "time": "2019-08-29T07:01:03+00:00"
->>>>>>> feature/laravel-v6
         },
         {
             "name": "barryvdh/laravel-ide-helper",
