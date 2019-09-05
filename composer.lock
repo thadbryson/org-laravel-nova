@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "828cb926761f946f5f7d264a3f445801",
+    "content-hash": "e14fbfc598383405684ec67680d18ae6",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -49,13 +49,13 @@
             "authors": [
                 {
                     "name": "Benjamin Eberlei",
-                    "role": "Lead Developer",
-                    "email": "kontakt@beberlei.de"
+                    "email": "kontakt@beberlei.de",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Richard Quadling",
-                    "role": "Collaborator",
-                    "email": "rquadling@gmail.com"
+                    "email": "rquadling@gmail.com",
+                    "role": "Collaborator"
                 }
             ],
             "description": "Thin assertion library for input validation in business models.",
@@ -125,20 +125,20 @@
         },
         {
             "name": "chris-ware/nova-breadcrumbs",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chris-ware/nova-breadcrumbs.git",
-                "reference": "c22aa536c9456515e0aa50e0fc183b7d28487169"
+                "reference": "8aca4fcad48f4798b04ae82370b7211e2eb28985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chris-ware/nova-breadcrumbs/zipball/c22aa536c9456515e0aa50e0fc183b7d28487169",
-                "reference": "c22aa536c9456515e0aa50e0fc183b7d28487169",
+                "url": "https://api.github.com/repos/chris-ware/nova-breadcrumbs/zipball/8aca4fcad48f4798b04ae82370b7211e2eb28985",
+                "reference": "8aca4fcad48f4798b04ae82370b7211e2eb28985",
                 "shasum": ""
             },
             "require": {
-                "laravel/nova": ">=2.0.0 <=2.1.1",
+                "laravel/nova": ">=2.0.0 <=2.2.0",
                 "php": ">=7.1.0"
             },
             "type": "library",
@@ -163,7 +163,7 @@
                 "laravel",
                 "nova"
             ],
-            "time": "2019-08-25T12:52:29+00:00"
+            "time": "2019-09-04T17:31:35+00:00"
         },
         {
             "name": "danielstjules/stringy",
@@ -1021,9 +1021,9 @@
             "authors": [
                 {
                     "name": "Gregorio Hernández Caso",
-                    "role": "Developer",
                     "email": "gregoriohc@gmail.com",
-                    "homepage": "https://github.com/gregoriohc"
+                    "homepage": "https://github.com/gregoriohc",
+                    "role": "Developer"
                 }
             ],
             "description": "A Laravel Nova responsive theme.",
@@ -1220,6 +1220,68 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "highsolutions/eloquent-sequence",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/highsolutions/eloquent-sequence.git",
+                "reference": "6283e7ee03bd84df153093a05fac00a1417accd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/highsolutions/eloquent-sequence/zipball/6283e7ee03bd84df153093a05fac00a1417accd4",
+                "reference": "6283e7ee03bd84df153093a05fac00a1417accd4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*|^6.0",
+                "php": ">=7.1.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "3.*|4.*",
+                "phpunit/phpunit": "6.*|7.*|8.*"
+            },
+            "type": "library",
+            "extra": {
+                "component": "package",
+                "frameworks": [
+                    "Laravel 5.0",
+                    "Laravel 5.1",
+                    "Laravel 5.2",
+                    "Laravel 5.3",
+                    "Laravel 5.4",
+                    "Laravel 5.5",
+                    "Laravel 5.6",
+                    "Laravel 5.7"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "HighSolutions\\EloquentSequence\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "HighSolutions",
+                    "email": "adam@highsolutions.pl"
+                }
+            ],
+            "description": "A Laravel package for easy creation and management sequence support for Eloquent models with elastic configuration.",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "model",
+                "order",
+                "sequence"
+            ],
+            "time": "2019-09-04T06:51:56+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1464,43 +1526,43 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.35",
+            "version": "v6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5a9e4d241a8b815e16c9d2151e908992c38db197"
+                "reference": "89c81d4dc37714d82521d05dc003b26b2a86defc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5a9e4d241a8b815e16c9d2151e908992c38db197",
-                "reference": "5a9e4d241a8b815e16c9d2151e908992c38db197",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/89c81d4dc37714d82521d05dc003b26b2a86defc",
+                "reference": "89c81d4dc37714d82521d05dc003b26b2a86defc",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.1",
                 "dragonmantank/cron-expression": "^2.0",
-                "egulias/email-validator": "^2.0",
+                "egulias/email-validator": "^2.1.10",
                 "erusev/parsedown": "^1.7",
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "league/flysystem": "^1.0.8",
-                "monolog/monolog": "^1.12",
-                "nesbot/carbon": "^1.26.3 || ^2.0",
+                "monolog/monolog": "^1.12|^2.0",
+                "nesbot/carbon": "^2.0",
                 "opis/closure": "^3.1",
-                "php": "^7.1.3",
+                "php": "^7.2",
                 "psr/container": "^1.0",
                 "psr/simple-cache": "^1.0",
                 "ramsey/uuid": "^3.7",
                 "swiftmailer/swiftmailer": "^6.0",
-                "symfony/console": "^4.2",
-                "symfony/debug": "^4.2",
-                "symfony/finder": "^4.2",
-                "symfony/http-foundation": "^4.2",
-                "symfony/http-kernel": "^4.2",
-                "symfony/process": "^4.2",
-                "symfony/routing": "^4.2",
-                "symfony/var-dumper": "^4.2",
+                "symfony/console": "^4.3.4",
+                "symfony/debug": "^4.3.4",
+                "symfony/finder": "^4.3.4",
+                "symfony/http-foundation": "^4.3.4",
+                "symfony/http-kernel": "^4.3.4",
+                "symfony/process": "^4.3.4",
+                "symfony/routing": "^4.3.4",
+                "symfony/var-dumper": "^4.3.4",
                 "tijsverkoyen/css-to-inline-styles": "^2.2.1",
                 "vlucas/phpdotenv": "^3.3"
             },
@@ -1540,47 +1602,44 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^3.0",
                 "doctrine/dbal": "^2.6",
-                "filp/whoops": "^2.1.4",
+                "filp/whoops": "^2.4",
                 "guzzlehttp/guzzle": "^6.3",
                 "league/flysystem-cached-adapter": "^1.0",
-                "mockery/mockery": "^1.0",
+                "mockery/mockery": "^1.2.3",
                 "moontoast/math": "^1.1",
-                "orchestra/testbench-core": "3.8.*",
+                "orchestra/testbench-core": "^4.0",
                 "pda/pheanstalk": "^4.0",
-                "phpunit/phpunit": "^7.5|^8.0",
+                "phpunit/phpunit": "^8.3",
                 "predis/predis": "^1.1.1",
-                "symfony/css-selector": "^4.2",
-                "symfony/dom-crawler": "^4.2",
+                "symfony/cache": "^4.3",
                 "true/punycode": "^2.1"
             },
             "suggest": {
-                "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (^3.0).",
+                "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage and SES mail driver (^3.0).",
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
                 "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
+                "ext-memcached": "Required to use the memcache cache driver.",
                 "ext-pcntl": "Required to use all features of the queue worker.",
                 "ext-posix": "Required to use all features of the queue worker.",
-                "filp/whoops": "Required for friendly error pages in development (^2.1.4).",
+                "ext-redis": "Required to use the Redis cache and queue drivers.",
+                "filp/whoops": "Required for friendly error pages in development (^2.4).",
                 "fzaninotto/faker": "Required to use the eloquent factory builder (^1.4).",
-                "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (^6.0).",
+                "guzzlehttp/guzzle": "Required to use the Mailgun mail driver and the ping methods on schedules (^6.0).",
                 "laravel/tinker": "Required to use the tinker console command (^1.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^1.0).",
                 "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
-                "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (^1.0).",
                 "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
                 "moontoast/math": "Required to use ordered UUIDs (^1.1).",
-                "nexmo/client": "Required to use the Nexmo transport (^1.0).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (^4.0).",
-                "predis/predis": "Required to use the redis cache and queue drivers (^1.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^3.0).",
-                "symfony/css-selector": "Required to use some of the crawler integration testing tools (^4.2).",
-                "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (^4.2).",
+                "symfony/cache": "Required to PSR-6 cache bridge (^4.3).",
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^1.1).",
                 "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.8-dev"
+                    "dev-master": "6.x-dev"
                 }
             },
             "autoload": {
@@ -1608,7 +1667,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-09-03T16:44:30+00:00"
+            "time": "2019-09-03T13:09:57+00:00"
         },
         {
             "name": "laravel/horizon",
@@ -1681,17 +1740,17 @@
         },
         {
             "name": "laravel/nova",
-            "version": "v2.0.11",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:laravel/nova.git",
-                "reference": "055b382736bf2726754e8dcd674b4a0101ab6ac9"
+                "reference": "188b331861e22abc9ec9c17d28ebdb837ed6de67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-055b382736bf2726754e8dcd674b4a0101ab6ac9-zip-bcb2d5.zip",
-                "reference": "055b382736bf2726754e8dcd674b4a0101ab6ac9",
-                "shasum": "a0dde4bca15de2b3f06aa62043728ce485283a4d"
+                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-188b331861e22abc9ec9c17d28ebdb837ed6de67-zip-113270.zip",
+                "reference": "188b331861e22abc9ec9c17d28ebdb837ed6de67",
+                "shasum": "5f5bddd072dc7c0ee095c040a04ae31318ecb126"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -1712,7 +1771,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -1747,7 +1806,7 @@
                 "admin",
                 "laravel"
             ],
-            "time": "2019-08-13T17:17:17+00:00"
+            "time": "2019-09-03T20:23:50+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1898,21 +1957,21 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.24.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266"
+                "reference": "68545165e19249013afd1d6f7485aecff07a2d22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
-                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/68545165e19249013afd1d6f7485aecff07a2d22",
+                "reference": "68545165e19249013afd1d6f7485aecff07a2d22",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
+                "php": "^7.2",
+                "psr/log": "^1.0.1"
             },
             "provide": {
                 "psr/log-implementation": "1.0.0"
@@ -1920,33 +1979,36 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
-                "graylog2/gelf-php": "~1.0",
-                "jakub-onderka/php-parallel-lint": "0.9",
+                "elasticsearch/elasticsearch": "^6.0",
+                "graylog2/gelf-php": "^1.4.2",
+                "jakub-onderka/php-parallel-lint": "^0.9",
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
-                "phpunit/phpunit": "~4.5",
-                "phpunit/phpunit-mock-objects": "2.3.0",
+                "phpspec/prophecy": "^1.6.1",
+                "phpunit/phpunit": "^8.3",
+                "predis/predis": "^1.1",
+                "rollbar/rollbar": "^1.3",
                 "ruflin/elastica": ">=0.90 <3.0",
-                "sentry/sentry": "^0.13",
                 "swiftmailer/swiftmailer": "^5.3|^6.0"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
                 "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
                 "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-                "sentry/sentry": "Allow sending log messages to a Sentry server"
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -1972,7 +2034,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2018-11-05T09:00:11+00:00"
+            "time": "2019-08-30T09:56:44+00:00"
         },
         {
             "name": "moontoast/math",
@@ -3095,25 +3157,25 @@
         },
         {
             "name": "spatie/laravel-backup",
-            "version": "6.3.1",
+            "version": "6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-backup.git",
-                "reference": "cc37760ba75e9e07433b6314f37f438a91f7dea4"
+                "reference": "933c90957932dabf43b33bf91661bf3c8db8bc6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-backup/zipball/cc37760ba75e9e07433b6314f37f438a91f7dea4",
-                "reference": "cc37760ba75e9e07433b6314f37f438a91f7dea4",
+                "url": "https://api.github.com/repos/spatie/laravel-backup/zipball/933c90957932dabf43b33bf91661bf3c8db8bc6a",
+                "reference": "933c90957932dabf43b33bf91661bf3c8db8bc6a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "~5.8.0",
-                "illuminate/contracts": "~5.8.0",
-                "illuminate/events": "~5.8.0",
-                "illuminate/filesystem": "~5.8.0",
-                "illuminate/notifications": "~5.8.0",
-                "illuminate/support": "~5.8.0",
+                "illuminate/console": "~5.8.0|^6.0",
+                "illuminate/contracts": "~5.8.0|^6.0",
+                "illuminate/events": "~5.8.0|^6.0",
+                "illuminate/filesystem": "~5.8.0|^6.0",
+                "illuminate/notifications": "~5.8.0|^6.0",
+                "illuminate/support": "~5.8.0|^6.0",
                 "league/flysystem": "^1.0.49",
                 "php": "^7.2",
                 "spatie/db-dumper": "^2.12",
@@ -3122,8 +3184,9 @@
             },
             "require-dev": {
                 "laravel/slack-notification-channel": "^1.0",
+                "league/flysystem-aws-s3-v3": "^1.0",
                 "mockery/mockery": "^1.0",
-                "orchestra/testbench": "~3.8.0",
+                "orchestra/testbench": "~3.8.0|^4.0",
                 "phpunit/phpunit": "^8.0"
             },
             "suggest": {
@@ -3152,9 +3215,9 @@
             "authors": [
                 {
                     "name": "Freek Van der Herten",
-                    "role": "Developer",
                     "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be"
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
                 }
             ],
             "description": "A Laravel package to backup your application",
@@ -3165,30 +3228,30 @@
                 "laravel-backup",
                 "spatie"
             ],
-            "time": "2019-07-16T20:56:47+00:00"
+            "time": "2019-09-04T06:42:31+00:00"
         },
         {
             "name": "spatie/nova-backup-tool",
-            "version": "3.1.1",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/nova-backup-tool.git",
-                "reference": "7cc00c44143484daa46b887a25d1916d18a1ee09"
+                "reference": "9489991e4a44a69804704245e6ac70aa2d4766c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/nova-backup-tool/zipball/7cc00c44143484daa46b887a25d1916d18a1ee09",
-                "reference": "7cc00c44143484daa46b887a25d1916d18a1ee09",
+                "url": "https://api.github.com/repos/spatie/nova-backup-tool/zipball/9489991e4a44a69804704245e6ac70aa2d4766c9",
+                "reference": "9489991e4a44a69804704245e6ac70aa2d4766c9",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "^5.8",
+                "illuminate/support": "^5.8|^6.0",
                 "laravel/nova": "^2.0",
                 "php": "^7.2",
                 "spatie/laravel-backup": "^6.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^3.8",
+                "orchestra/testbench": "^3.8|^4.0",
                 "phpunit/phpunit": "8.0",
                 "spatie/phpunit-snapshot-assertions": "^2.0"
             },
@@ -3223,7 +3286,7 @@
                 "laravel",
                 "nova"
             ],
-            "time": "2019-09-02T08:19:19+00:00"
+            "time": "2019-09-05T10:52:11+00:00"
         },
         {
             "name": "spatie/once",
@@ -3262,9 +3325,9 @@
             "authors": [
                 {
                     "name": "Freek Van der Herten",
-                    "role": "Developer",
                     "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be"
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
                 }
             ],
             "description": "A magic memoization function",
@@ -4699,16 +4762,18 @@
         {
             "name": "thadbryson/data",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:thadbry/data.git",
-                "reference": "e7c4e1740a5121597fc7a06f692c641701c51016"
+            "dist": {
+                "type": "path",
+                "url": "../data",
+                "reference": "28bb8b3414915c98020f3701daebaa050ea1499e",
+                "shasum": null
             },
             "require": {
-                "illuminate/events": "5.8.*",
+                "highsolutions/eloquent-sequence": "3.4.*",
+                "illuminate/events": "6.0.*",
                 "php": ">=7.3",
                 "roave/security-advisories": "dev-master",
-                "thadbryson/toolkit": "dev-master"
+                "thadbryson/toolkit": "*"
             },
             "require-dev": {
                 "codeception/codeception": "3.*"
@@ -4734,16 +4799,16 @@
             },
             "license": [
                 "proprietary"
-            ],
-            "time": "2019-09-03T15:27:48+00:00"
+            ]
         },
         {
             "name": "thadbryson/toolkit",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:thadbry/toolkit.git",
-                "reference": "284b3b234d540d42f5fa0b57d157203e4222175b"
+            "dist": {
+                "type": "path",
+                "url": "../toolkit",
+                "reference": "2619510f3f17cfadbd485aac4f3a099215c1a691",
+                "shasum": null
             },
             "require": {
                 "beberlei/assert": "3.2.*",
@@ -4753,19 +4818,19 @@
                 "ext-simplexml": "*",
                 "giggsey/libphonenumber-for-php": "8.10.*",
                 "guzzlehttp/guzzle": "6.3.*",
-                "illuminate/database": "5.8.*",
-                "illuminate/http": "5.8.*",
-                "illuminate/support": "5.8.*",
-                "illuminate/validation": "5.8.*",
+                "illuminate/database": "6.0.*",
+                "illuminate/http": "6.0.*",
+                "illuminate/support": "6.0.*",
+                "illuminate/validation": "6.0.*",
                 "php": ">=7.3",
                 "ramsey/uuid": "3.8.*",
+                "roave/security-advisories": "dev-master",
                 "twig/twig": "2.11.*"
             },
             "require-dev": {
                 "codeception/codeception": "3.*",
                 "mikey179/vfsstream": "1.6.*",
-                "mockery/mockery": "1.2.*",
-                "roave/security-advisories": "dev-master"
+                "mockery/mockery": "1.2.*"
             },
             "type": "library",
             "extra": {
@@ -4788,8 +4853,7 @@
             },
             "license": [
                 "proprietary"
-            ],
-            "time": "2019-08-24T18:23:16+00:00"
+            ]
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -5126,16 +5190,16 @@
         },
         {
             "name": "barryvdh/laravel-ide-helper",
-            "version": "v2.6.3",
+            "version": "v2.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "1b15d2930b465eb1aec761edc220f122e283ae1a"
+                "reference": "16eb4f65ee0d51b1f1182d56ae28ee00a70ce75a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/1b15d2930b465eb1aec761edc220f122e283ae1a",
-                "reference": "1b15d2930b465eb1aec761edc220f122e283ae1a",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/16eb4f65ee0d51b1f1182d56ae28ee00a70ce75a",
+                "reference": "16eb4f65ee0d51b1f1182d56ae28ee00a70ce75a",
                 "shasum": ""
             },
             "require": {
@@ -5196,7 +5260,7 @@
                 "phpstorm",
                 "sublime"
             ],
-            "time": "2019-08-31T10:53:08+00:00"
+            "time": "2019-09-03T17:51:13+00:00"
         },
         {
             "name": "barryvdh/reflection-docblock",
@@ -5354,9 +5418,9 @@
             "authors": [
                 {
                     "name": "Marcel Pociot",
-                    "role": "Developer",
                     "email": "marcel@beyondco.de",
-                    "homepage": "https://beyondco.de"
+                    "homepage": "https://beyondco.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Symfony Var-Dump Server for Laravel",
@@ -6538,9 +6602,9 @@
             "authors": [
                 {
                     "name": "Phil Bennett",
-                    "role": "Developer",
                     "email": "philipobenito@gmail.com",
-                    "homepage": "http://www.philipobenito.com"
+                    "homepage": "http://www.philipobenito.com",
+                    "role": "Developer"
                 }
             ],
             "description": "A fast and intuitive dependency injection container.",
@@ -7254,18 +7318,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "role": "Developer",
-                    "email": "sebastian@phpeople.de"
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "Developer",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Library for handling version information and constraints",
@@ -7515,8 +7579,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "A tool for quickly measuring the size of a PHP project.",
@@ -7683,8 +7747,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -7734,8 +7798,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -7776,8 +7840,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Simple template engine.",
@@ -7825,8 +7889,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Utility class for timing",
@@ -7956,8 +8020,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
@@ -8381,8 +8445,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "FinderFacade is a convenience wrapper for Symfony's Finder component.",
@@ -8662,8 +8726,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
@@ -10034,13 +10098,75 @@
                 "validate"
             ],
             "time": "2019-08-24T08:43:50+00:00"
+        },
+        {
+            "name": "wnx/laravel-stats",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefanzweifel/laravel-stats.git",
+                "reference": "1b3c60bfbf81233973cbc2a63be4e6f83b2d6205"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefanzweifel/laravel-stats/zipball/1b3c60bfbf81233973cbc2a63be4e6f83b2d6205",
+                "reference": "1b3c60bfbf81233973cbc2a63be4e6f83b2d6205",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "~5.8.0|^6.0",
+                "illuminate/support": "~5.8.0|^6.0",
+                "php": ">=7.2.0",
+                "phploc/phploc": "~4.0|~5.0",
+                "symfony/finder": "~3.3|~4.0"
+            },
+            "require-dev": {
+                "laravel/browser-kit-testing": "~2.0|~3.0|~4.0|~5.0",
+                "laravel/dusk": "~3.0|~4.0|~5.0",
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "^3.8",
+                "phpunit/phpunit": "6.*|7.*|8.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Wnx\\LaravelStats\\StatsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wnx\\LaravelStats\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Zweifel",
+                    "email": "hello@stefanzweifel.io",
+                    "homepage": "https://stefanzweifel.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Get insights about your Laravel Project",
+            "homepage": "https://github.com/stefanzweifel/laravel-stats",
+            "keywords": [
+                "laravel",
+                "statistics",
+                "stats",
+                "wnx"
+            ],
+            "time": "2019-09-01T14:18:49+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "roave/security-advisories": 20,
-        "thadbryson/data": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

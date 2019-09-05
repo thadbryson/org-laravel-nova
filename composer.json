@@ -17,8 +17,12 @@
             "url": "https://nova.laravel.com"
         },
         {
-            "type": "vcs",
-            "url": "git@bitbucket.org:thadbry/data.git"
+            "type": "path",
+            "url": "../data"
+        },
+        {
+            "type": "path",
+            "url": "../toolkit"
         }
     ],
     "require": {
@@ -42,16 +46,15 @@
         "laraning/nova-time-field": "0.1.*",
         "laravel/framework": "6.0.*",
         "laravel/horizon": "3.3.*",
-        "laravel/nova": "2.0.*",
+        "laravel/nova": "2.2.*",
         "laravel/tinker": "1.0.*",
         "roave/security-advisories": "dev-master",
         "robertboes/nova-slider-field": "0.*",
         "sbine/route-viewer": "0.0.*",
-        "spatie/nova-backup-tool": "3.1.*",
-        "thadbryson/data": "dev-master",
+        "spatie/nova-backup-tool": "3.3.*",
+        "thadbryson/data": "*",
         "timothyasp/nova-color-field": "1.0.*",
-        "vkovic/laravel-custom-casts": "1.1.*",
-        "wewowweb/laravel-svelte-preset": "0.1.*"
+        "vkovic/laravel-custom-casts": "1.1.*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
