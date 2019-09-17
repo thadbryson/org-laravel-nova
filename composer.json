@@ -1,5 +1,5 @@
 {
-    "name": "thadbryson/nova-tcb",
+    "name": "thadbryson/org-laravel-nova",
     "type": "library",
     "description": "Laravel Nova setup for myself.",
     "license": "proprietary",
