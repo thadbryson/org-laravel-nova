@@ -15,13 +15,13 @@ add('shared_files', ['docker/.env']);
 // Tasks
 desc('Docker build');
 task('docker:build', function () {
-    $output = run('cd {{deploy_path}}/current/docker && ./ctl build');
+    $output = run('cd {{deploy_path}}/current && ./dock build');
     writeln('<info>' . $output . '</info>');
 });
 
 desc('Docker restart');
 task('docker:restart', function () {
-    $output = run('cd {{deploy_path}}/current/docker && ./ctl restart');
+    $output = run('cd {{deploy_path}}/current && ./dock restart');
     writeln('<info>' . $output . '</info>');
 });
 
