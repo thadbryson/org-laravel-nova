@@ -33,7 +33,6 @@
         "ext-pdo": "*",
         "ext-tokenizer": "*",
         "ext-xml": "*",
-        "chris-ware/nova-breadcrumbs": "1.2.*",
         "davidpiesse/nova-phpinfo": "0.0.*",
         "digitalcloud/nova-custom-views": "1.*",
         "doctrine/dbal": "2.9.*",
