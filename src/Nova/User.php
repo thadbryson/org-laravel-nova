@@ -38,35 +38,37 @@ abstract class User extends \TCB\Laravel\Nova\Resource
      */
     public function fields(Request $request)
     {
-        return [
-            ID::make(),
+        $fields = [ID::make()];
 
-            new Panel('Details', $this->userFields()),
+        $user_fields = $this->userFields();
 
-            new Panel('User Info', [
-                Name::make(),
+        if ($user_fields !== []) {
+            $fields[] = new Panel('Details', $user_fields);
+        }
 
-                Select::make('Theme')
-                    ->options(Themes::ALL),
+        $fields[] = new Panel('Profile', [
+            Name::make(),
 
-                EmailLink::make(),
-                Text::make('Email')
-                    ->onlyOnForms()
-                    ->creationRules('unique:users,email')
-                    ->updateRules('unique:users,email,{{resourceId}}'),
-            ]),
+            EmailLink::make(),
 
-            new Panel('Change Password', [
-                Password::make('Password')
-                    ->onlyOnForms()
-                    ->creationRules(['required', 'string', 'min:8'])
-                    ->updateRules('nullable', 'string', 'min:8'),
+            Text::make('E-mail')
+                ->onlyOnForms()
+                ->creationRules('unique:users,email')
+                ->updateRules('unique:users,email,{{resourceId}}'),
+        ]);
 
-                PasswordConfirmation::make('Password Confirmation', 'password_confirm')
-                    ->onlyOnForms()
-                    ->creationRules('required', 'string', 'min:8')
-                    ->updateRules('nullable', 'string', 'min:8')
-            ])
-        ];
+        $fields[] = new Panel('Change Password', [
+            Password::make('Password')
+                ->onlyOnForms()
+                ->creationRules(['required', 'string', 'min:8'])
+                ->updateRules('nullable', 'string', 'min:8'),
+
+            PasswordConfirmation::make('Password Confirmation', 'password_confirm')
+                ->onlyOnForms()
+                ->creationRules('required', 'string', 'min:8')
+                ->updateRules('nullable', 'string', 'min:8'),
+        ]);
+
+        return $fields;
     }
 }
