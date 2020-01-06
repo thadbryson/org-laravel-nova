@@ -5,7 +5,6 @@ declare(strict_types = 1);
 namespace TCB\Laravel\Nova;
 
 use Carbon\CarbonInterval;
-use ChrisWare\NovaBreadcrumbs\Traits\Breadcrumbs;
 use DateTime;
 use DateTimeInterface;
 use Tool\Clock;
@@ -17,8 +16,6 @@ use Tool\Clock;
  */
 abstract class Resource extends \Laravel\Nova\Resource
 {
-    use Breadcrumbs;
-
     /**
      * Default 'name' attribute for relationship of this Resource.
      *
