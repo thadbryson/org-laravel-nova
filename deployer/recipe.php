@@ -9,28 +9,36 @@ require 'recipe/laravel.php';
 // Normal options
 set('branch', 'master');
 
+set('artisan', 'cd {{release_path}} && ./dock artisan');
+
 add('shared_dirs', ['bootstrap/cache']);
 add('shared_files', ['docker/.env']);
 
 // Tasks
 desc('Docker build');
 task('docker:build', function () {
-    $output = run('cd {{deploy_path}}/current && ./dock build');
+    $output = run('cd {{release_path}} && ./dock build');
+
     writeln('<info>' . $output . '</info>');
 });
 
 desc('Docker restart');
 task('docker:restart', function () {
-    $output = run('cd {{deploy_path}}/current && ./dock restart');
+    $output = run('cd {{release_path}} && ./dock restart');
+
     writeln('<info>' . $output . '</info>');
 });
 
-// [Optional] if deploy fails automatically unlock.
-after('deploy:failed', 'deploy:unlock');
+desc('Artisan CLI commands for Laravel');
+task('deploy:laravel', function () {
+    run('{{artisan}} storage:link');
+    run('{{artisan}} view:cache');
+    run('{{artisan}} config:cache');
+    run('{{artisan}} optimize:clear');
+    run('{{artisan}} optimize');
+    run('{{artisan}} migrate --force');
+});
 
-/**
- * Main task
- */
 desc('Deploy your project');
 task('deploy', [
     'deploy:info',
@@ -42,20 +50,18 @@ task('deploy', [
     'deploy:vendors',
     'deploy:writable',
 
-    // Artisan commands
-    'artisan:storage:link',
-    'artisan:optimize',
-    'artisan:optimize:clear',
-    'artisan:migrate',
-
-    'deploy:symlink',
-
-    // Docker
     'docker:build',
     'docker:restart',
 
+    'deploy:symlink',
+
+    // All artisan commands
+    'deploy:laravel',
+
     'deploy:unlock',
-    'cleanup',
+    'cleanup'
 ]);
 
+// [Optional] if deploy fails automatically unlock.
+after('deploy:failed', 'deploy:unlock');
 after('deploy', 'success');
