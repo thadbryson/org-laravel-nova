@@ -51,7 +51,7 @@ abstract class User extends \TCB\Laravel\Nova\Resource
 
             EmailLink::make(),
 
-            Text::make('E-mail')
+            Text::make('E-mail', 'email')
                 ->onlyOnForms()
                 ->creationRules('unique:users,email')
                 ->updateRules('unique:users,email,{{resourceId}}'),
