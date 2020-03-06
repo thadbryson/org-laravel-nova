@@ -4993,11 +4993,11 @@
             "dist": {
                 "type": "path",
                 "url": "../data",
-                "reference": "923742339952c33bcadc125a312f7fea155ff610"
+                "reference": "d056ad15d4fe9b3b49e535ace40f25f2824602eb"
             },
             "require": {
                 "highsolutions/eloquent-sequence": "3.4.*",
-                "illuminate/events": "5.8.*|6.0.*",
+                "illuminate/events": "5.8.*|6.0.*|7.*",
                 "php": ">=7.3",
                 "roave/security-advisories": "dev-master",
                 "thadbryson/tools": "*"
@@ -6585,12 +6585,12 @@
             "version": "1.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/facebook/php-webdriver.git",
+                "url": "https://github.com/php-webdriver/php-webdriver-archive.git",
                 "reference": "e43de70f3c7166169d0f14a374505392734160e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/e43de70f3c7166169d0f14a374505392734160e5",
+                "url": "https://api.github.com/repos/php-webdriver/php-webdriver-archive/zipball/e43de70f3c7166169d0f14a374505392734160e5",
                 "reference": "e43de70f3c7166169d0f14a374505392734160e5",
                 "shasum": ""
             },
