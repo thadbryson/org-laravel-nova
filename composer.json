@@ -41,7 +41,7 @@
         "laraning/nova-time-field": "0.1.*",
         "laravel/framework": "5.8.*|6.*|7.*",
         "laravel/horizon": "4.0.*",
-        "laravel/nova":  "2.3.*",
+        "laravel/nova":  "3.0.*",
         "laravel/tinker": "2.2.*",
         "roave/security-advisories": "dev-master",
         "robertboes/nova-slider-field": "0.*",
