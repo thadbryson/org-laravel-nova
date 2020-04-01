@@ -1,4 +1,16 @@
 {
+    "name":              "thadbryson/org-laravel-nova",
+    "description":       "Laravel Nova install package",
+    "type":              "project",
+    "license":           "proprietary",
+    "authors":           [
+        {
+            "name":     "Thad Bryson",
+            "email":    "thadbry@gmail.com",
+            "homepage": "http://thadbryson.co",
+            "role":     "Creator"
+        }
+    ],
     "repositories": [
         {
             "type": "composer",
