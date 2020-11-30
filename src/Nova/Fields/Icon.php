@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova\Fields;
 
+use Laravel\Nova\Fields\Text;
 use Tool\Collection;
 
 /**
@@ -11,7 +12,7 @@ use Tool\Collection;
  *
  * Show icons for different values.
  */
-class Icon extends \Laravel\Nova\Fields\Text
+class Icon extends Text
 {
     /**
      * Values to their icons.
@@ -67,7 +68,7 @@ class Icon extends \Laravel\Nova\Fields\Text
             ->add([
                 'value' => $value,
                 'icon'  => $icon,
-                'text'  => $text
+                'text'  => $text,
             ]);
 
         return $this;

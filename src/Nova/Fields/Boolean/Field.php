@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova\Fields\Boolean;
 
+use Laravel\Nova\Fields\Boolean;
 use Tool\Str;
 
 /**
@@ -11,7 +12,7 @@ use Tool\Str;
  *
  * Form Field for Booleans. Displays on forms only.
  */
-class Field extends \Laravel\Nova\Fields\Boolean
+class Field extends Boolean
 {
     public function __construct(string $name, string $attribute = null, callable $resolveCallback = null)
     {

@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace TCB\Laravel\Nova\Fields\DateTime;
 
 use DateTimeZone;
+use Laravel\Nova\Fields\Text;
 use Tool\Clock;
 use function date_default_timezone_get;
 
@@ -13,7 +14,7 @@ use function date_default_timezone_get;
  *
  * For DateTime fieldss that are in the past.
  */
-class WithInterval extends \Laravel\Nova\Fields\Text
+class WithInterval extends Text
 {
     /**
      * PHP DateTime format string. https://php.net/date
@@ -70,6 +71,13 @@ class WithInterval extends \Laravel\Nova\Fields\Text
             });
     }
 
+    public function format(string $format): self
+    {
+        $this->format = $format;
+
+        return $this;
+    }
+
     protected function getAbbrHtml($datetime): string
     {
         $datetime = Clock::makeOrNull($datetime, $this->timezone ?? date_default_timezone_get());
@@ -103,13 +111,6 @@ class WithInterval extends \Laravel\Nova\Fields\Text
     public function withoutInterval(): self
     {
         $this->withInterval = false;
-
-        return $this;
-    }
-
-    public function format(string $format): self
-    {
-        $this->format = $format;
 
         return $this;
     }

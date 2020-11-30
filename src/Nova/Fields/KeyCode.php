@@ -4,9 +4,10 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova\Fields;
 
+use Laravel\Nova\Fields\Text;
 use TCB\Laravel\Nova\Fields\Traits\ShowOnIndex;
 
-class KeyCode extends \Laravel\Nova\Fields\Text
+class KeyCode extends Text
 {
     use ShowOnIndex;
 

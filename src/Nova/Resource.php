@@ -5,8 +5,10 @@ declare(strict_types = 1);
 namespace TCB\Laravel\Nova;
 
 use Carbon\CarbonInterval;
+use Closure;
 use DateTime;
 use DateTimeInterface;
+use Illuminate\Database\Eloquent\Model;
 use Tool\Clock;
 
 /**
@@ -29,6 +31,10 @@ abstract class Resource extends \Laravel\Nova\Resource
      * @var string|null
      */
     public static $subtitle;
+
+    public static $sort = [
+        'id' => 'desc',
+    ];
 
     /**
      * Label for this Resource. Used in ::label()
@@ -57,33 +63,20 @@ abstract class Resource extends \Laravel\Nova\Resource
 
     protected static $formatIcon = 'btn btn-bg btn-primary rounded p-2 text-white';
 
-    public static $sort = [
-        'id' => 'desc'
-    ];
-
     /**
      * Returns TRUE - all Users can run.
      *
-     * @var \Closure
+     * @var Closure
      */
     protected $runByAll;
 
-    public function __construct(\Illuminate\Database\Eloquent\Model $resource)
+    public function __construct(Model $resource)
     {
         parent::__construct($resource);
 
         $this->runByAll = function () {
             return true;
         };
-    }
-
-    protected static function applyOrderings($query, array $orderings)
-    {
-        if ($orderings === []) {
-            $orderings = static::$sort;
-        }
-
-        return parent::applyOrderings($query, $orderings);
     }
 
     public static function label(): string
@@ -96,14 +89,23 @@ abstract class Resource extends \Laravel\Nova\Resource
         return static::$singularLabel ?? parent::singularLabel();
     }
 
-    public function subtitle(): ?string
-    {
-        return $this->{static::$subtitle} ?? null;
-    }
-
     public static function uriKey(): string
     {
         return static::$uriKey ?? parent::uriKey();
+    }
+
+    protected static function applyOrderings($query, array $orderings)
+    {
+        if ($orderings === []) {
+            $orderings = static::$sort;
+        }
+
+        return parent::applyOrderings($query, $orderings);
+    }
+
+    public function subtitle(): ?string
+    {
+        return $this->{static::$subtitle} ?? null;
     }
 
     protected function formatDate($value): string
@@ -128,6 +130,13 @@ abstract class Resource extends \Laravel\Nova\Resource
         return $value->format(static::$formatDateTime);
     }
 
+    protected function formatInterval(DateTimeInterface $start, DateTimeInterface $from = null): string
+    {
+        return $this->getInterval($start, $from)
+            ->seconds(0)
+            ->forHumans(true);
+    }
+
     protected function getInterval(DateTimeInterface $start, DateTimeInterface $from = null): CarbonInterval
     {
         $from  = Clock::make($from ?? new DateTime);
@@ -136,18 +145,18 @@ abstract class Resource extends \Laravel\Nova\Resource
         return $start->diffAsCarbonInterval($from);
     }
 
-    protected function formatInterval(DateTimeInterface $start, DateTimeInterface $from = null): string
-    {
-        return $this->getInterval($start, $from)
-            ->seconds(0)
-            ->forHumans(true);
-    }
-
     protected function formatIcon(string $text = '', string $icon = null): string
     {
         $icon = $icon ?? static::$formatIcon;
 
         return sprintf('<span class="%s">%s</span>', $icon, $text);
+    }
+
+    protected function formatLinkNewTab(string $href, string $text, array $attributes = []): string
+    {
+        $attributes['target'] = '_blank';
+
+        return $this->formatLink($href, $text, $attributes);
     }
 
     protected function formatLink(string $href, string $text, array $attributes = []): string
@@ -159,12 +168,5 @@ abstract class Resource extends \Laravel\Nova\Resource
         }
 
         return sprintf('<a class="no-underline dim text-primary font-bold" href="%s" %s>%s</a>', $href, $attrs, $text);
-    }
-
-    protected function formatLinkNewTab(string $href, string $text, array $attributes = []): string
-    {
-        $attributes['target'] = '_blank';
-
-        return $this->formatLink($href, $text, $attributes);
     }
 }

@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova\Fields\Traits;
 
+use Laravel\Nova\Fields\Text;
 use Tool\Str;
 use Tool\StrStatic;
 use Tool\Validation\Assert;
@@ -12,7 +13,7 @@ use function is_string;
 /**
  * Trait DescriptionLong
  *
- * @mixin \Laravel\Nova\Fields\Text
+ * @mixin Text
  *
  * @property int $maxLength
  * @property int $showLimit
@@ -38,28 +39,6 @@ trait Description
 
                 return $value;
             });
-    }
-
-    public function setShowLimit(int $length): self
-    {
-        $this->showLimit = $length;
-
-        return $this;
-    }
-
-    public function clearShowLimit(): self
-    {
-        $this->showLimit = null;
-
-        return $this;
-    }
-
-    public function setMaxLength(int $length): self
-    {
-        $this->maxLength = Assert::min($length, 1, 'The max length must be at least 1.');
-
-        // Reset the rules with the new max length.
-        return $this->rules($this->rules);
     }
 
     public function rules($rules)
@@ -90,5 +69,27 @@ trait Description
         parent::rules($rules);
 
         return $this;
+    }
+
+    public function setShowLimit(int $length): self
+    {
+        $this->showLimit = $length;
+
+        return $this;
+    }
+
+    public function clearShowLimit(): self
+    {
+        $this->showLimit = null;
+
+        return $this;
+    }
+
+    public function setMaxLength(int $length): self
+    {
+        $this->maxLength = Assert::min($length, 1, 'The max length must be at least 1.');
+
+        // Reset the rules with the new max length.
+        return $this->rules($this->rules);
     }
 }

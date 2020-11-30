@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace TCB\Laravel\Nova\Fields\DateTime;
 
 use Exception;
+use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Tool\Clock;
 
@@ -15,7 +16,7 @@ use Tool\Clock;
  *
  * @method static make(string $name, string $attribute = null, callable $resolveCallback = null)
  */
-class Time extends \Laravel\Nova\Fields\Field
+class Time extends Field
 {
     /**
      * Using vendor's component and I'm extending here.
@@ -45,23 +46,23 @@ class Time extends \Laravel\Nova\Fields\Field
         $this->with12HourTime();
     }
 
-    public function format(string $format): self
-    {
-        return $this->withMeta(['format' => $format]);
-    }
-
     public function with12HourTime(bool $hour12 = true): self
     {
         return $this->withMeta(['twelveHourTime' => $hour12]);
     }
 
+    public function format(string $format): self
+    {
+        return $this->withMeta(['format' => $format]);
+    }
+
     /**
      * Hydrate the given attribute on the model based on the incoming request.
      *
-     * @param \Laravel\Nova\Http\Requests\NovaRequest $request
-     * @param string                                  $requestAttribute
-     * @param object                                  $model
-     * @param string                                  $attribute
+     * @param NovaRequest $request
+     * @param string      $requestAttribute
+     * @param object      $model
+     * @param string      $attribute
      *
      * @return void
      * @throws Exception

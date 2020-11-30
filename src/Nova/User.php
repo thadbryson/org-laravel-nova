@@ -5,18 +5,17 @@ declare(strict_types = 1);
 namespace TCB\Laravel\Nova;
 
 use App\Enums\Themes;
-use TCB\Laravel\Nova\Resources\Traits\RestrictViewing;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\PasswordConfirmation;
-use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Panel;
 use TCB\Laravel\Nova\Fields\EmailLink;
 use TCB\Laravel\Nova\Fields\ID;
 use TCB\Laravel\Nova\Fields\Name;
+use TCB\Laravel\Nova\Resources\Traits\RestrictViewing;
 
-abstract class User extends \TCB\Laravel\Nova\Resource
+abstract class User extends Resource
 {
     use RestrictViewing;
 
@@ -28,12 +27,10 @@ abstract class User extends \TCB\Laravel\Nova\Resource
         'name', 'email',
     ];
 
-    abstract protected function userFields(): array;
-
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param Request $request
      * @return array
      */
     public function fields(Request $request)
@@ -71,4 +68,6 @@ abstract class User extends \TCB\Laravel\Nova\Resource
 
         return $fields;
     }
+
+    abstract protected function userFields(): array;
 }

@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova\Actions;
 
+use Exception;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
@@ -11,14 +12,9 @@ use Illuminate\Support\Collection;
 use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Fields\ActionFields;
 
-class SetValuesMultiple extends \Laravel\Nova\Actions\Action
+class SetValuesMultiple extends Action
 {
     use InteractsWithQueue, Queueable, SerializesModels;
-
-    /**
-     * @var array
-     */
-    protected $values;
 
     /**
      * Title to display on frontend.
@@ -26,6 +22,11 @@ class SetValuesMultiple extends \Laravel\Nova\Actions\Action
      * @var string
      */
     public $name;
+
+    /**
+     * @var array
+     */
+    protected $values;
 
     public function __construct(array $values, string $name)
     {
@@ -36,10 +37,10 @@ class SetValuesMultiple extends \Laravel\Nova\Actions\Action
     /**
      * Perform the action on the given models.
      *
-     * @param  \Laravel\Nova\Fields\ActionFields $fields
-     * @param  \Illuminate\Support\Collection    $models
+     * @param ActionFields $fields
+     * @param Collection   $models
      * @return array
-     * @throws \Exception
+     * @throws Exception
      */
     public function handle(ActionFields $fields, Collection $models): array
     {

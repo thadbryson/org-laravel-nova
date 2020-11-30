@@ -11,5 +11,4 @@ namespace TCB\Laravel\Facades;
  */
 class Broadcast extends \Illuminate\Support\Facades\Broadcast
 {
-
 }

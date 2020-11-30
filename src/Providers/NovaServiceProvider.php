@@ -2,11 +2,17 @@
 
 declare(strict_types = 1);
 
-namespace TCB\Laravel\Nova;
+namespace TCB\Laravel\Providers;
 
 use App\Facades\Nova;
+use App\Models\User\User;
+use ChrisWare\NovaBreadcrumbs\NovaBreadcrumbs;
+use Davidpiesse\NovaPhpinfo\Tool;
 use Illuminate\Support\Facades\Gate;
+use KABBOUCHI\LogsTool\LogsTool;
 use Laravel\Nova\NovaApplicationServiceProvider;
+use Sbine\RouteViewer\RouteViewer;
+use Spatie\BackupTool\BackupTool;
 
 abstract class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -31,16 +37,6 @@ abstract class NovaServiceProvider extends NovaApplicationServiceProvider
     }
 
     /**
-     * Register the application's Nova resources.
-     *
-     * @return void
-     */
-    protected function resources(): void
-    {
-        Nova::resourcesIn(app_path('Nova'));
-    }
-
-    /**
      * Get the tools that should be listed in the Nova sidebar.
      *
      * @return array
@@ -48,12 +44,22 @@ abstract class NovaServiceProvider extends NovaApplicationServiceProvider
     public function tools(): array
     {
         return [
-            new \Sbine\RouteViewer\RouteViewer,
-            new \Spatie\BackupTool\BackupTool,
-            new \Davidpiesse\NovaPhpinfo\Tool,
-            new \KABBOUCHI\LogsTool\LogsTool,
-            \ChrisWare\NovaBreadcrumbs\NovaBreadcrumbs::make(),
+            new RouteViewer,
+            new BackupTool,
+            new Tool,
+            new LogsTool,
+            NovaBreadcrumbs::make(),
         ];
+    }
+
+    /**
+     * Register the application's Nova resources.
+     *
+     * @return void
+     */
+    protected function resources(): void
+    {
+        Nova::resourcesIn(app_path('Nova'));
     }
 
     /**
@@ -78,7 +84,7 @@ abstract class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     protected function gate(): void
     {
-        Gate::define('viewNova', function (\App\Models\User\User $user): bool {
+        Gate::define('viewNova', function (User $user): bool {
 
             if ($this->whitelistEmail === null) {
                 return true;

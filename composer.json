@@ -18,15 +18,23 @@
         },
         {
             "type": "path",
+            "url":  "../buildy"
+        },
+        {
+            "type": "path",
             "url":  "../data"
         },
         {
-            "type": "github",
-            "url":  "git@github.com:thadbryson/eloquent-sequence.git"
+            "type": "path",
+            "url":  "../tools"
+        },
+        {
+            "type": "path",
+            "url":  "../eloquent-sequence"
         }
     ],
     "require":           {
-        "php":                                      ">=7.3",
+        "php":                                      ">=7.4",
         "ext-bcmath":                               "*",
         "ext-ctype":                                "*",
         "ext-curl":                                 "*",
@@ -37,31 +45,42 @@
         "ext-pdo":                                  "*",
         "ext-tokenizer":                            "*",
         "ext-xml":                                  "*",
-        "davidpiesse/nova-phpinfo":                 "0.*",
-        "digitalcloud/nova-custom-views":           "1.*",
-        "doctrine/dbal":                            "2.*",
-        "gregoriohc/laravel-nova-theme-responsive": "0.*",
-        "kabbouchi/nova-logs-tool":                 "0.2.*",
-        "laraning/nova-time-field":                 "0.2.*",
-        "laravel/framework":                        "7.4.*",
-        "laravel/horizon":                          "4.2.*",
-        "laravel/nova":                             "3.1.*",
-        "laravel/tinker":                           "2.3.*",
+        "bakerkretzmar/nova-settings-tool":         ">=1.0",
+        "chris-ware/nova-breadcrumbs":              ">=2.0",
+        "davidpiesse/nova-phpinfo":                 ">=0.0.1",
+        "digitalcloud/nova-custom-views":           ">=1.0",
+        "doctrine/dbal":                            ">=2.0",
+        "fideloper/proxy":                          ">=4.0",
+        "fruitcake/laravel-cors":                   ">=2.0",
+        "gregoriohc/laravel-nova-theme-responsive": ">=0.1",
+        "llaski/nova-scheduled-jobs":               ">=3.0",
+        "kabbouchi/nova-logs-tool":                 ">=0.2",
+        "laraning/nova-time-field":                 ">=0.2",
+        "laravel/framework":                        ">=8.0",
+        "laravel/horizon":                          ">=4.0",
+        "laravel/nova":                             ">=3.0",
+        "laravel/jetstream":                        ">=1.5",
+        "laravel/sanctum":                          ">=2.6",
+        "laravel/tinker":                           ">=2.0",
+        "livewire/livewire":                        ">=2.0",
+        "predis/predis":                            ">=1.0",
         "roave/security-advisories":                "dev-master",
-        "robertboes/nova-slider-field":             "0.1.*",
-        "sbine/route-viewer":                       "0.0.*",
-        "spatie/nova-backup-tool":                  "4.0.*",
+        "robertboes/nova-slider-field":             ">=0.1",
+        "sbine/route-viewer":                       ">=0.0",
+        "spatie/nova-backup-tool":                  ">=4.0",
+        "thadbryson/buildy":                        "dev-master",
         "thadbryson/data":                          "dev-master",
+        "thadbryson/tools":                         "dev-master",
         "thadbryson/eloquent-sequence":             "dev-master",
-        "timothyasp/nova-color-field":              "1.0.*",
-        "vkovic/laravel-custom-casts":              "1.2.*"
+        "timothyasp/nova-color-field":              ">=1.0",
+        "vkovic/laravel-custom-casts":              ">=1.2"
     },
-    "require-dev":       {
+    "_require-dev":       {
         "barryvdh/laravel-debugbar":      "3.2.*",
         "barryvdh/laravel-ide-helper":    "2.6.*",
         "beyondcode/laravel-dump-server": "1.4.*",
         "codeception/codeception":        "4.*",
-        "deployer/deployer":              "6.7.*",
+        "deployer/deployer":              ">=6",
         "fzaninotto/faker":               "1.9.*",
         "mockery/mockery":                "1.3.*",
         "nunomaduro/collision":           "4.1.*",

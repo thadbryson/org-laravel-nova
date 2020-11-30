@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace TCB\Laravel\Nova\Resources\Traits;
+namespace TCB\Laravel\Nova\Traits;
 
 use Illuminate\Http\Request;
 

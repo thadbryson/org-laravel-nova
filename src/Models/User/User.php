@@ -6,6 +6,7 @@ namespace TCB\Laravel\Models\User;
 
 use Carbon\Carbon;
 use Data\BaseModel;
+use Eloquent;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\MustVerifyEmail;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -13,23 +14,36 @@ use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Foundation\Auth\Access\Authorizable;
+use Illuminate\Notifications\DatabaseNotification;
+use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Tool\Str;
 
 /**
  * Class User
  *
- * @property string                                                                                                         $name
- * @property string                                                                                                         $email
- * @property string                                                                                                         $password
- * @property Carbon                                                                                                         $email_verified_at
- * @property int                                                                                                            $id
- * @property string|null                                                                                                    $remember_token
- * @property string                                                                                                         $theme
- * @property string                                                                                                         $api_token
- * @property \Illuminate\Support\Carbon|null                                                                                $created_at
- * @property \Illuminate\Support\Carbon|null                                                                                $updated_at
- * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
+ * @property string
+ *               $name
+ * @property string
+ *               $email
+ * @property string
+ *               $password
+ * @property Carbon
+ *               $email_verified_at
+ * @property int
+ *               $id
+ * @property string|null
+ *               $remember_token
+ * @property string
+ *               $theme
+ * @property string
+ *               $api_token
+ * @property \Illuminate\Support\Carbon|null
+ *               $created_at
+ * @property \Illuminate\Support\Carbon|null
+ *               $updated_at
+ * @property-read DatabaseNotificationCollection|DatabaseNotification[]
+ *                $notifications
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\UsernewModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\UsernewQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Userpermission($permissions)
@@ -44,7 +58,7 @@ use Tool\Str;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\UserwhereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\UserwhereUpdatedAt($value)
  * @method static self create(array $attributes)
- * @mixin \Eloquent
+ * @mixin Eloquent
  *
  * @method static User\Repository repository()
  */
@@ -59,7 +73,7 @@ class User extends BaseModel implements AuthenticatableContract, AuthorizableCon
     protected $attributes = [
         'name'  => '',
         'email' => '',
-        'theme' => 'Default'
+        'theme' => 'Default',
     ];
 
     protected $fillable = [
@@ -72,7 +86,7 @@ class User extends BaseModel implements AuthenticatableContract, AuthorizableCon
         'password',
         'remember_token',
         'api_token',
-        'email_verified_at'
+        'email_verified_at',
     ];
 
     private $guard_name = 'web';

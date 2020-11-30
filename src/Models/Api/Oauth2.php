@@ -4,10 +4,12 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Models\Api;
 
+use App\Models\Api\Oauth2\Repository;
+
 /**
  * Class Oauth2
  *
- * @method static \App\Models\Api\Oauth2\Repository repository()
+ * @method static Repository repository()
  */
 final class Oauth2 extends \Data\Models\Api\Oauth2
 {

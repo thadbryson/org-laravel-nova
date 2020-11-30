@@ -13,5 +13,4 @@ use Illuminate\Console\Application;
  */
 class Artisan extends \Illuminate\Support\Facades\Artisan
 {
-
 }

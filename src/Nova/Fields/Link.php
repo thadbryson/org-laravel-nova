@@ -4,7 +4,9 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova\Fields;
 
-class Link extends \Laravel\Nova\Fields\Text
+use Laravel\Nova\Fields\Text;
+
+class Link extends Text
 {
     protected $text = 'Link';
 
@@ -41,6 +43,20 @@ class Link extends \Laravel\Nova\Fields\Text
             });
     }
 
+    public function setClasses(string $classes): self
+    {
+        $this->classes = $classes;
+
+        return $this;
+    }
+
+    public function openNewTab(): self
+    {
+        $this->target = 'target="_blank"';
+
+        return $this;
+    }
+
     public function useTextAsValue(): self
     {
         $this->textUseValue = true;
@@ -53,20 +69,6 @@ class Link extends \Laravel\Nova\Fields\Text
         $this->textUseValue = false;
 
         $this->text = $text;
-
-        return $this;
-    }
-
-    public function setClasses(string $classes): self
-    {
-        $this->classes = $classes;
-
-        return $this;
-    }
-
-    public function openNewTab(): self
-    {
-        $this->target = 'target="_blank"';
 
         return $this;
     }

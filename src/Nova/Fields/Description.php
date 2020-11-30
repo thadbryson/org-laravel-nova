@@ -4,12 +4,14 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova\Fields;
 
+use Laravel\Nova\Fields\Text;
+
 /**
  * Class Description
  *
  * 255 character max, named "description", with a limit to characters shown of 100
  */
-class Description extends \Laravel\Nova\Fields\Text
+class Description extends Text
 {
     use Traits\Description {
         __construct as protected __constructTrait;

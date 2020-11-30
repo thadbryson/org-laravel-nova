@@ -19,7 +19,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             __DIR__ . '/../resources/js/publish' => resource_path('js'),
             __DIR__ . '/../resources/js/shared'  => resource_path('js/vendor/nova-tcb'),
             __DIR__ . '/../resources/lang/en'    => resource_path('lang/en'),
-            __DIR__ . '/../resources/sass'       => resource_path('sass')
+            __DIR__ . '/../resources/sass'       => resource_path('sass'),
         ]);
     }
 }

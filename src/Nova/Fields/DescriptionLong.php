@@ -4,12 +4,14 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova\Fields;
 
+use Laravel\Nova\Fields\Textarea;
+
 /**
  * Class DescriptionLong
  *
  * 255 character max, named "description", with a limit to characters shown of 100
  */
-class DescriptionLong extends \Laravel\Nova\Fields\Textarea
+class DescriptionLong extends Textarea
 {
     use Traits\Description;
 
