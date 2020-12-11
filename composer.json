@@ -18,10 +18,6 @@
         },
         {
             "type": "path",
-            "url":  "../buildy"
-        },
-        {
-            "type": "path",
             "url":  "../data"
         },
         {
@@ -66,7 +62,6 @@
         "robertboes/nova-slider-field":             "^0.1",
         "sbine/route-viewer":                       "^0.0",
         "spatie/nova-backup-tool":                  "^4.1",
-        "thadbryson/buildy":                        "dev-master",
         "thadbryson/data":                          "dev-master",
         "thadbryson/tools":                         "dev-master",
         "highsolutions/eloquent-sequence":          "^3.8",
