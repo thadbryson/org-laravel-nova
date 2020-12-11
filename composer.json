@@ -11,11 +11,8 @@
             "role":     "Creator"
         }
     ],
-    "repositories":      [
-        {
-            "type": "composer",
-            "url":  "https://nova.laravel.com"
-        },
+    "_comment": [
+        "Use these in `repositories` when in dev.",
         {
             "type": "path",
             "url":  "../data"
@@ -23,6 +20,12 @@
         {
             "type": "path",
             "url":  "../tools"
+        }
+    ],
+    "repositories":      [
+        {
+            "type": "composer",
+            "url":  "https://nova.laravel.com"
         }
     ],
     "require":           {
