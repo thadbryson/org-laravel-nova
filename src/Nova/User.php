@@ -4,7 +4,6 @@ declare(strict_types = 1);
 
 namespace TCB\Laravel\Nova;
 
-use App\Enums\Themes;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\PasswordConfirmation;
@@ -13,7 +12,7 @@ use Laravel\Nova\Panel;
 use TCB\Laravel\Nova\Fields\EmailLink;
 use TCB\Laravel\Nova\Fields\ID;
 use TCB\Laravel\Nova\Fields\Name;
-use TCB\Laravel\Nova\Resources\Traits\RestrictViewing;
+use TCB\Laravel\Nova\Traits\RestrictViewing;
 
 abstract class User extends Resource
 {
